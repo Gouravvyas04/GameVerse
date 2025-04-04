@@ -1,0 +1,74 @@
+.header {
+  position: sticky !important;
+  top: 0;
+  z-index: 1000; /* Ensures it stays above other content */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 0.6rem 0;
+  background: linear-gradient(90deg, #1f1f1f 0%, #2d2d2d 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+/* Logo Icon - clean and static */
+.logo-icon {
+    margin-right: 8px;
+    color: #f39c12;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo-icon:hover {
+    transform: scale(1.1);
+    color: #f7c546;
+}
+
+/* SearchBar Centering and Style */
+.search-container {
+    width: 100%;
+    max-width: 400px;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Nav Links Styling */
+.library-link {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    color: #ffffff !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.library-link:hover {
+    color: #f39c12 !important;
+}
+
+/* Sign In Button */
+button.btn-outline-light {
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 6px 16px;
+    transition: all 0.3s ease;
+    border-color: #f39c12;
+    color: #f39c12;
+}
+
+button.btn-outline-light:hover {
+    background-color: #f39c12;
+    color: #000;
+}
+
+/* Responsive Behavior */
+@media (max-width: 992px) {
+    .search-container {
+        margin: 10px 0;
+        max-width: 100%;
+    }
+
+    .library-link {
+        justify-content: center;
+        margin: 10px 0;
+    }
+}
+

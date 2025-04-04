@@ -1,0 +1,103 @@
+.game-card-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.game-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.game-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+}
+
+.game-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.game-card:hover .game-image {
+    transform: scale(1.05);
+}
+
+.placeholder-image {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    color: #999;
+    font-style: italic;
+}
+
+.bookmark-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.game-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 2.5em;
+}
+
+.game-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.star-icon {
+    color: gold;
+    margin-right: 5px;
+}
+
+.release-date {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.genre-badge,
+.tag-badge {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.game-genres {
+    margin-bottom: 10px;
+}
+
+.game-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Add this to GameCard.css */
+.modal-header button.btn-link:hover {
+    color: #000;
+    transform: scale(1.1);
+}

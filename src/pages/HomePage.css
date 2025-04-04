@@ -1,0 +1,42 @@
+.home-page {
+    min-height: calc(100vh - 56px);
+    padding-top: 20px;
+}
+
+.sidebar-col {
+    position: sticky;
+    top: 76px;
+    height: calc(100vh - 76px);
+    overflow-y: auto;
+}
+
+.content-col {
+    padding: 0 20px;
+}
+
+.game-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.results-count {
+    color: #6c757d;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .sidebar-col {
+        position: relative;
+        top: 0;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .game-list-header {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,70 @@
+.sidebar {
+    padding: 15px;
+    background-color: #121417;
+    border-radius: 12px;
+    color: #f1f1f1;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.sidebar-card {
+    background: #1c1e22;
+    border: none;
+    color: #fff;
+}
+
+.filter-header {
+    background-color: #1f2124;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid #333;
+}
+
+.filter-body {
+    padding: 20px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h5 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+.scrollable-container {
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+.form-check {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+button {
+    font-weight: 500;
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        padding: 10px;
+    }
+
+    .scrollable-container {
+        max-height: 120px;
+    }
+}
+
+.filter-section h5{
+    color: gray;
+}
